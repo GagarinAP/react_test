@@ -1,0 +1,11 @@
+.main {
+    background-color: yellow;
+}
+
+.withBorder {
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background-color: darkslateblue;
+}
