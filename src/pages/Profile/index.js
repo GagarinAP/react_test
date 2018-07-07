@@ -1,9 +1,38 @@
 import React from 'react';
 
-const Profile = () => {
+export const Profile = ({ match, location, history }) => {
+		console.log(match)
+		console.log(location)
+		console.log(history)
 		return (
-				<div>Profile</div>
+				<div>
+						<div><strong>I dont see dynamic routes!!!</strong></div>
+						<div>You are now at {location.pathname}</div>
+						<div>Profile <strong>{match.params.id}</strong></div>
+				</div>
 		);
 };
 
-export default Profile;
+export const ProfileRandom = ({ match, location, history }) => {
+		console.log(match)
+		console.log(location)
+		console.log(history)
+		return (
+				<div>
+						<div>You are now at {location.pathname}</div>
+						<div>Profile <strong>{match.params.id}</strong></div>
+				</div>
+		);
+};
+
+export const Search = ({ match, location, history }) => {
+		console.log(match)
+		console.log(location)
+		console.log(history)
+		return (
+				<div>
+						<div>You are now at {location.pathname}</div>
+						<div>Search <strong>{location.search}</strong></div>
+				</div>
+		);
+};

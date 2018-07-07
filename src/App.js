@@ -8,7 +8,9 @@ import {
 		Home,
 		About,
 		Profile,
-		Layout
+		ProfileRandom,
+		Layout,
+		Search
 } from './pages';
 
 const App = () => (
@@ -16,8 +18,10 @@ const App = () => (
 				<Switch>
 						<Layout>
 								<Route exact path='/' component={Home}/>
-								<Route exact path='/about' component={About}/>
+								<Route path='/about' component={About}/>
 								<Route exact path='/profile' component={Profile}/>
+								<Route path='/profile/:id' component={ProfileRandom}/>
+								<Route path='/search' component={Search}/>
 						</Layout>
 				</Switch>
 		</Router>

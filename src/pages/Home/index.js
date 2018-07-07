@@ -1,6 +1,7 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ match, location, history }) => {
 		return (
 				<div>
 								Home
@@ -8,4 +9,4 @@ const Home = () => {
 		);
 };
 
-export default Home;
+export default withRouter(Home);

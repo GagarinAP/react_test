@@ -15,6 +15,12 @@ const Header = () => (
 								<li className="nav-item">
 										<NavLink className="nav-link" activeClassName='active' to="/profile">Profile</NavLink>
 								</li>
+								<li className="nav-item">
+										<NavLink className="nav-link" activeClassName='active' to={`/profile/${Math.random() * 10000 | 0}`}>Profile with random()</NavLink>
+								</li>
+								<li className="nav-item">
+										<NavLink className="nav-link" activeClassName='active' to={`/search?phrase=${Math.random() * 10000 | 0}`}>Search with random()</NavLink>
+								</li>
 						</ul>
 				</div>
 		</nav>
